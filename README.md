@@ -1,2 +1,0 @@
-# Mudanzas.github.io
-mudanzas
