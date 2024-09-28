@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('img/img-inicio1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Asegura que el contenedor ocupe toda la altura disponible si el contenido es pequeño */
+#contacto {
+    min-height: 100vh;
+    /* Ocupa al menos toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    /* Espaciado interno */
+}
+
+.container {
+    max-width: 100%;
+    /* Ajusta el ancho del formulario */
+    padding: 20px;
+    background: rgba(236, 237, 237, 0.9);
+    /* Fondo verde semi-transparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4c6c90;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    max-width: 600px;
+    margin-left: 400px;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #007bff;
+}
+
+.floter {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
