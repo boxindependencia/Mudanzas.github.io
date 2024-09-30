@@ -13,6 +13,7 @@ header {
     background-color: #007bff;
     color: white;
     padding: 10rem;
+    /* Padding del encabezado */
 }
 
 header .container {
@@ -41,11 +42,12 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    /* Adjust this value to create more space above the form */
+    /* Espacio superior del formulario */
 }
 
 .form-section {
-    width: 50%;
+    width: 40%;
+    /* Ajustar el ancho a un 40% */
 }
 
 .form-section h2 {
@@ -83,7 +85,8 @@ button:hover {
 }
 
 .contact-section {
-    width: 30%;
+    width: 25%;
+    /* Ajustar el ancho a un 25% */
     text-align: center;
 }
 
@@ -110,4 +113,24 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Media query para la responsividad */
+@media (max-width: 768px) {
+
+    .form-section,
+    .contact-section {
+        width: 100%;
+        /* Colocar en una sola columna en pantallas pequeñas */
+    }
+
+    .form-container {
+        flex-direction: column;
+        /* Colocar secciones verticalmente en pantallas pequeñas */
+    }
+
+    header {
+        padding: 1rem;
+        /* Ajustar el padding del header en pantallas pequeñas */
+    }
 }
