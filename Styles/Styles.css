@@ -66,6 +66,42 @@ nav ul li a {
     width: 100%;
     /* Abarca todo el ancho */
 }
+@media (max-width: 575.98px) {
+    .navbar-collapse {
+        background-color: #0056b3; /* Mantiene el fondo azul */
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        left: 0; /* Alinear al lado izquierdo */
+        /* Otros estilos que desees modificar para pantallas más pequeñas */
+    }
+
+    .navbar-toggler {
+        border-color: #0056b3; /* Color del borde del botón hamburguesa */
+        border-width: 5px; /* Grosor del borde */
+    }
+
+    .navbar-nav {
+        text-align: left; /* Alinear el texto hacia la izquierda */
+        padding-left: 0; /* Elimina el padding a la izquierda */
+        /* Otros estilos que desees ajustar */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: #fff; /* Color de los enlaces */
+        padding: 10px; /* Ajusta el padding para que los enlaces sean más grandes */
+        background-color: #0056b3; /* Fondo de los enlaces */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #e00f0f; /* Cambia el color del texto al pasar el cursor */
+        /* Puedes agregar otros efectos de hover si es necesario */
+    }
+
+    nav {
+        background-color: #e8e9ed; /* Fondo de la barra de navegación */
+    }
+}
+
 
 @media (max-width: 991.98px) {
     .navbar-collapse {
