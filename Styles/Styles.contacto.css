@@ -126,7 +126,16 @@ footer {
 @media (max-width: 576px) {
     header {
         padding: 1rem;
+
         /* Ajustar el padding del header en pantallas pequeñas */
+        .contact-section,
+        .form-section {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 20px;
+            padding: 20px;
+        }
     }
 }
 
