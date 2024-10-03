@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+
+
+
+}
+
+
+
+header a.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header .nav-link {
+    color: #ffffff;
+}
+
+header .nav-link:hover {
+    color: #cce5ff;
+}
+
+main {
+    padding: 50px 0;
+}
+
+h1,
+h2 {
+    color: #007bff;
+}
+
+.nosotros {
+    margin-top: 80px;
+}
+
+blockquote {
+    border-left: 3px solid #007bff;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.blockquote-footer {
+
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+
+.btn-small {
+    padding: 2px;
+    /* Ajusta el padding según lo que prefieras */
+    max-width: 90px;
+    /* Puedes reducir el ancho máximo si es necesario */
+}
