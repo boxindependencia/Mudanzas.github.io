@@ -81,6 +81,7 @@ nav ul li a {
         transition: all 0.5s ease;
         /* Efecto de transición */
     }
+
     .navbar-toggler {
         border-color: #0056b3;
         border-width: 5px;
