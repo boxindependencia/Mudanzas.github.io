@@ -6,6 +6,7 @@
 
 .navbar-toggler {
     border-color: #0056b3;
+    border-width: 5px;
     /* Color del borde del botón hamburguesa */
 }
 
@@ -94,6 +95,11 @@ nav ul li a {
         /* Color de los enlaces */
         padding: 5px;
         /* Espaciado entre enlaces */
+    }
+
+    nav {
+        background-color: #e8e9ed;
+        /* Cambia este color por el que desees */
     }
 }
 
