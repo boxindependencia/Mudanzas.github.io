@@ -46,9 +46,46 @@ nav ul li a {
 }
 
 .form-section {
-    width: 40%;
+    width: 30%;
     /* Ajustar el ancho a un 40% */
 }
+
+/* Ajustar el ancho de la sección de contacto a un 25% */
+.contact-section {
+    width: 25%;
+    /* Ajusta esto si prefieres un ancho diferente */
+    text-align: center;
+    margin-right: 70px;
+}
+
+/* Controla el ancho de las imágenes dentro de la sección de contacto */
+.contact-section img {
+    width: 100%;
+    /* Asegura que las imágenes no excedan el tamaño del contenedor */
+    height: auto;
+}
+
+/* Ajustar el formulario para que no ocupe todo el ancho de la pantalla */
+.form-section {
+    width: 65%;
+    /* Ajusta esto si prefieres un ancho diferente */
+    margin-left: auto;
+    /* Centrando si es necesario */
+    margin-right: auto;
+}
+
+/* Ajustar el formulario para tamaños de pantalla más pequeños */
+@media (max-width: 992px) {
+
+    .contact-section,
+    .form-section {
+        width: 100%;
+        /* Para pantallas más pequeñas, usa todo el ancho */
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
 
 .form-section h2 {
     background-color: #007bff;
@@ -66,13 +103,13 @@ form {
 }
 
 label {
-    margin: 0.5rem 0 0.2rem;
+    margin: 2px 0 2px;
 }
 
 input,
 select,
 textarea {
-    padding: 2px;
+    padding: 1px;
     margin-bottom: 2px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -82,17 +119,6 @@ textarea {
 
 button:hover {
     background-color: #0056b3;
-}
-
-.contact-section {
-    width: 25%;
-    /* Ajustar el ancho a un 25% */
-    text-align: center;
-}
-
-.contact-section img {
-    max-width: 100%;
-    height: auto;
 }
 
 .contact-section h3 {
