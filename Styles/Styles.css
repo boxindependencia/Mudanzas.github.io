@@ -281,3 +281,27 @@ footer {
     background-color: #9b9797;
     /* Ajusta el tamaño de la fuente */
 }
+@media (max-width: 575.98px) {
+    .custom-small {
+        display: inline-block; /* Asegura que el botón sea visible */
+        padding: 5px 10px; /* Ajusta el padding para mejor usabilidad */
+        font-size: 12px; /* Aumenta el tamaño de la fuente para ser legible */
+        margin-top: 10px; /* Agrega un margen superior para separación */
+    }
+
+    /* Asegura que los textos no se desborden y se mantengan centrados */
+    .texto {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    /* Ajusta el contenedor de la tarjeta para que no haya superposición */
+    .card-body {
+        padding: 15px; /* Añade un padding adecuado */
+    }
+
+    .image-container img {
+        width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+
