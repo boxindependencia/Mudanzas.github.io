@@ -46,7 +46,7 @@ nav ul li a {
 
 /* Cambiar el color al pasar el cursor */
 .nav-link:hover {
-    color: #e00f0f;
+    color: #290cbe;
     /* Cambia el color del texto al pasar el cursor */
 }
 
@@ -66,39 +66,53 @@ nav ul li a {
     width: 100%;
     /* Abarca todo el ancho */
 }
+
 @media (max-width: 575.98px) {
     .navbar-collapse {
-        background-color: #0056b3; /* Mantiene el fondo azul */
-        width: 100%; /* Ocupa todo el ancho de la pantalla */
-        left: 0; /* Alinear al lado izquierdo */
+        background-color: #0056b3;
+        /* Mantiene el fondo azul */
+        width: 100%;
+        /* Ocupa todo el ancho de la pantalla */
+        left: 0;
+        /* Alinear al lado izquierdo */
         /* Otros estilos que desees modificar para pantallas más pequeñas */
     }
 
     .navbar-toggler {
-        border-color: #0056b3; /* Color del borde del botón hamburguesa */
-        border-width: 5px; /* Grosor del borde */
+        border-color: #0056b3;
+        /* Color del borde del botón hamburguesa */
+        border-width: 5px;
+        /* Grosor del borde */
     }
 
     .navbar-nav {
-        text-align: left; /* Alinear el texto hacia la izquierda */
-        padding-left: 0; /* Elimina el padding a la izquierda */
+        text-align: left;
+        /* Alinear el texto hacia la izquierda */
+        padding-left: 0;
+        /* Elimina el padding a la izquierda */
         /* Otros estilos que desees ajustar */
     }
 
     .navbar-nav .nav-item .nav-link {
-        color: #fff; /* Color de los enlaces */
-        padding: 10px; /* Ajusta el padding para que los enlaces sean más grandes */
-        background-color: #0056b3; /* Fondo de los enlaces */
-        border-radius: 5px; /* Bordes redondeados */
+        color: #fff;
+        /* Color de los enlaces */
+        padding: 10px;
+        /* Ajusta el padding para que los enlaces sean más grandes */
+        background-color: #0056b3;
+        /* Fondo de los enlaces */
+        border-radius: 5px;
+        /* Bordes redondeados */
     }
 
     .navbar-nav .nav-item .nav-link:hover {
-        color: #e00f0f; /* Cambia el color del texto al pasar el cursor */
+        color: #e00f0f;
+        /* Cambia el color del texto al pasar el cursor */
         /* Puedes agregar otros efectos de hover si es necesario */
     }
 
     nav {
-        background-color: #e8e9ed; /* Fondo de la barra de navegación */
+        background-color: #e8e9ed;
+        /* Fondo de la barra de navegación */
     }
 }
 
@@ -186,13 +200,31 @@ nav ul li a {
 }
 
 .card-title {
-    color: black;
+    color: rgb(12, 12, 12);
+    text-align: center;
+    border-radius: 10px;
+    background-color: #969494;
+    font-size: x-large;
+    padding: 5px;
     /* Color del título de la tarjeta */
 }
 
 .texto {
     color: black;
     /* Color del texto */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea el botón a la derecha */
+    margin-top: 10px;
+    /* Espaciado superior opcional */
+}
+
+.button-container .btn {
+    padding: 5px;
+    border-radius: 10px;
 }
 
 footer {
@@ -237,7 +269,7 @@ footer {
 
 .whatsapp-float:hover {
     background-color: #128c7e;
-    color: #FFF;
+    color: #2206f3;
     text-decoration: none;
 }
 
@@ -246,5 +278,6 @@ footer {
     padding: 3px 3px;
     /* Ajusta el padding según tus necesidades */
     font-size: 10px;
+    background-color: #9b9797;
     /* Ajusta el tamaño de la fuente */
 }
