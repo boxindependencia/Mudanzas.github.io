@@ -69,103 +69,84 @@ nav ul li a {
 
 @media (max-width: 575.98px) {
     .navbar-collapse {
-        background-color: #0056b3;
-        /* Mantiene el fondo azul */
-        width: 100%;
-        /* Ocupa todo el ancho de la pantalla */
-        left: 0;
-        /* Alinear al lado izquierdo */
-        /* Otros estilos que desees modificar para pantallas más pequeñas */
-    }
-
-    .navbar-toggler {
-        border-color: #0056b3;
-        /* Color del borde del botón hamburguesa */
-        border-width: 5px;
-        /* Grosor del borde */
+        background-color: #0056b3; /* Mantiene el fondo azul */
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        left: 0; /* Alinear al lado izquierdo */
+        z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
     }
 
     .navbar-nav {
-        text-align: left;
-        /* Alinear el texto hacia la izquierda */
-        padding-left: 0;
-        /* Elimina el padding a la izquierda */
-        /* Otros estilos que desees ajustar */
+        text-align: left; /* Alinear el texto hacia la izquierda */
+        padding-left: 0; /* Elimina el padding a la izquierda */
     }
 
     .navbar-nav .nav-item .nav-link {
-        color: #fff;
-        /* Color de los enlaces */
-        padding: 10px;
-        /* Ajusta el padding para que los enlaces sean más grandes */
-        background-color: #0056b3;
-        /* Fondo de los enlaces */
-        border-radius: 5px;
-        /* Bordes redondeados */
+        color: #fff; /* Color de los enlaces */
+        padding: 10px; /* Espaciado interno */
+        background-color: #0056b3; /* Fondo de los enlaces */
+        border-radius: 5px; /* Bordes redondeados */
+        display: block; /* Asegura que ocupen toda la línea */
+        width: 100%; /* Asegura que ocupen todo el ancho */
     }
 
     .navbar-nav .nav-item .nav-link:hover {
-        color: #e00f0f;
-        /* Cambia el color del texto al pasar el cursor */
-        /* Puedes agregar otros efectos de hover si es necesario */
+        color: #e00f0f; /* Cambia el color del texto al pasar el cursor */
     }
 
-    nav {
-        background-color: #e8e9ed;
-        /* Fondo de la barra de navegación */
+    .image-container {
+        height: auto; /* Ajusta la altura automática para la imagen */
+    }
+
+    .texto {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .card-body {
+        padding: 15px; /* Añade un padding adecuado */
+    }
+
+    .custom-small {
+        padding: 5px 10px; /* Asegura un mejor tamaño */
+        font-size: 12px; /* Aumenta el tamaño de la fuente */
+        margin-top: 10px; /* Agrega un margen superior */
     }
 }
 
-
 @media (max-width: 991.98px) {
     .navbar-collapse {
-        background-color: #0056b3;
-        /* Fondo de la navegación en dispositivos pequeños */
-        position: absolute;
-        /* Aparece justo debajo del botón hamburguesa */
+        background-color: #0056b3; /* Fondo de la navegación en dispositivos pequeños */
+        position: absolute; /* Aparece justo debajo del botón hamburguesa */
         top: 100%;
-        left: 50%;
-        /* Aparece desde la mitad de la pantalla */
-        width: 50%;
-        /* Ocupa la mitad derecha de la pantalla */
-        transition: all 0.5s ease;
-        /* Efecto de transición */
+        left: 50%; /* Aparece desde la mitad de la pantalla */
+        width: 50%; /* Ocupa la mitad derecha de la pantalla */
+        transition: all 0.5s ease; /* Efecto de transición */
     }
 
     .navbar-toggler {
         border-color: #0056b3;
-        border-width: 5px;
-        /* Color del borde del botón hamburguesa */
+        border-width: 5px; /* Color del borde del botón hamburguesa */
     }
 
     .navbar-nav {
-        text-align: left;
-        /* Alinear el texto hacia la izquierda */
-        padding-left: 1rem;
-        /* Espaciado desde la izquierda */
-
+        text-align: left; /* Alinear el texto hacia la izquierda */
+        padding-left: 1rem; /* Espaciado desde la izquierda */
     }
 
     .navbar-nav .nav-item .nav-link {
-        color: #fff;
-        /* Color de los enlaces */
-        padding: 5px;
-        /* Espaciado entre enlaces */
+        color: #fff; /* Color de los enlaces */
+        padding: 5px; /* Espaciado entre enlaces */
     }
 
     nav {
-        background-color: #e8e9ed;
-        /* Cambia este color por el que desees */
+        background-color: #e8e9ed; /* Cambia este color por el que desees */
     }
 }
 
 /* Código para las imágenes de los patrones de la página index */
 .image-container {
     width: 100%;
-    height: 200px;
-    /* Fija la altura del contenedor */
-    overflow: hidden;
-    /* Evita que las imágenes desborden */
+    height: 200px; /* Fija la altura del contenedor */
+    overflow: hidden; /* Evita que las imágenes desborden */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,30 +154,22 @@ nav ul li a {
 
 .image-container img {
     width: auto;
-    height: 100%;
-    /* La imagen se ajusta a la altura del contenedor sin deformarse */
-    object-fit: cover;
-    /* Asegura que la imagen llene el contenedor sin perder la proporción */
+    height: 100%; /* La imagen se ajusta a la altura del contenedor sin deformarse */
+    object-fit: cover; /* Asegura que la imagen llene el contenedor sin perder la proporción */
 }
 
 /* Asegura que las imágenes del carrusel tengan el mismo tamaño */
 .carousel-inner img {
-    width: 100%;
-    /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: 500px;
-    /* Puedes ajustar esta altura según lo necesites */
-    object-fit: cover;
-    /* Mantiene la proporción de la imagen y la recorta si es necesario */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 500px; /* Puedes ajustar esta altura según lo necesites */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
 }
 
 /* Alternativa: puedes ajustar la altura según el contenido */
 .carousel-inner img {
-    width: 100%;
-    /* Ajusta el ancho al 100% */
-    max-height: 500px;
-    /* Limita la altura máxima */
-    object-fit: cover;
-    /* Mantiene la proporción de la imagen y la recorta si es necesario */
+    width: 100%; /* Ajusta el ancho al 100% */
+    max-height: 500px; /* Limita la altura máxima */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
 }
 
 .card-title {
@@ -205,21 +178,17 @@ nav ul li a {
     border-radius: 10px;
     background-color: #969494;
     font-size: x-large;
-    padding: 5px;
-    /* Color del título de la tarjeta */
+    padding: 5px; /* Color del título de la tarjeta */
 }
 
 .texto {
-    color: black;
-    /* Color del texto */
+    color: black; /* Color del texto */
 }
 
 .button-container {
     display: flex;
-    justify-content: flex-end;
-    /* Alinea el botón a la derecha */
-    margin-top: 10px;
-    /* Espaciado superior opcional */
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    margin-top: 10px; /* Espaciado superior opcional */
 }
 
 .button-container .btn {
@@ -228,21 +197,14 @@ nav ul li a {
 }
 
 footer {
-    background-color: #0056b3;
-    /* Color de fondo del pie de página */
-    color: white;
-    /* Color del texto del pie de página */
-    text-align: center;
-    /* Centrar el texto */
-    padding: 15px;
-    /* Espaciado interno */
+    background-color: #0056b3; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Centrar el texto */
+    padding: 15px; /* Espaciado interno */
     position: relative;
     bottom: 0;
-    width: 100%;
-    /* Ancho completo */
+    width: 100%; /* Ancho completo */
 }
-
-
 
 /*probando css whatsapp flotante*/
 .whatsapp-float {
@@ -275,12 +237,11 @@ footer {
 
 /*clase para modificar el tamaño de los botones leer mas*/
 .custom-small {
-    padding: 3px 3px;
-    /* Ajusta el padding según tus necesidades */
-    font-size: 10px;
-    background-color: #9b9797;
-    /* Ajusta el tamaño de la fuente */
+    padding: 3px 3px; /* Ajusta el padding según tus necesidades */
+    font-size: 10px; /* Ajusta el tamaño de la fuente */
+    background-color: #9b9797; /* Ajusta el tamaño de la fuente */
 }
+
 @media (max-width: 575.98px) {
     .custom-small {
         display: inline-block; /* Asegura que el botón sea visible */
@@ -300,8 +261,7 @@ footer {
     }
 
     .image-container img {
-        width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        width: 100%; /* Asegura que la imagen ocupe el 100% */
+        height: auto; /* Ajusta la altura automáticamente */
     }
 }
-
