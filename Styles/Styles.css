@@ -1,3 +1,4 @@
+/* Cambiar el color de los enlaces de navegación */
 .navbar-collapse {
     text-align: center;
     /* Centrar los elementos */
@@ -202,7 +203,7 @@ nav ul li a {
     .custom-small:focus {
         background-color: #9b9797;
         /* Mantiene el fondo gris */
-        color: #fff;
+        color: #000;
         /* Mantiene el color del texto */
         outline: none;
         /* Elimina el contorno del botón al estar enfocado */
