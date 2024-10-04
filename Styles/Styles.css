@@ -1,4 +1,3 @@
-/* Cambiar el color de los enlaces de navegación */
 .navbar-collapse {
     text-align: center;
     /* Centrar los elementos */
@@ -91,6 +90,29 @@ nav ul li a {
         font-size: 10px;
         background-color: #9b9797;
         /* Ajusta el tamaño de la fuente */
+        color: #fff;
+        /* Color del texto, asegúrate de que sea legible */
+        border: none;
+        /* Elimina el borde por defecto */
+        cursor: pointer;
+        /* Cambia el cursor al pasar sobre el botón */
+    }
+
+    /* Mantener el color de fondo al hacer clic o al estar enfocado */
+    .custom-small:active,
+    .custom-small:focus {
+        background-color: #9b9797;
+        /* Mantiene el fondo gris */
+        color: #fff;
+        /* Mantiene el color del texto */
+        outline: none;
+        /* Elimina el contorno del botón al estar enfocado */
+    }
+
+    /* Efecto de hover para mejorar la interactividad */
+    .custom-small:hover {
+        background-color: #8c8c8c;
+        /* Cambia a un tono más oscuro al pasar el cursor */
     }
 
     .navbar-nav {
@@ -167,7 +189,31 @@ nav ul li a {
         font-size: 10px;
         background-color: #9b9797;
         /* Ajusta el tamaño de la fuente */
+        color: #fff;
+        /* Color del texto, asegúrate de que sea legible */
+        border: none;
+        /* Elimina el borde por defecto */
+        cursor: pointer;
+        /* Cambia el cursor al pasar sobre el botón */
     }
+
+    /* Mantener el color de fondo al hacer clic o al estar enfocado */
+    .custom-small:active,
+    .custom-small:focus {
+        background-color: #9b9797;
+        /* Mantiene el fondo gris */
+        color: #fff;
+        /* Mantiene el color del texto */
+        outline: none;
+        /* Elimina el contorno del botón al estar enfocado */
+    }
+
+    /* Efecto de hover para mejorar la interactividad */
+    .custom-small:hover {
+        background-color: #8c8c8c;
+        /* Cambia a un tono más oscuro al pasar el cursor */
+    }
+
 
     nav {
         background-color: #e8e9ed;
