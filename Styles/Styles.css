@@ -367,3 +367,58 @@ footer {
     background-color: #9b9797;
     /* Ajusta el tamaño de la fuente */
 }
+
+/* css para el video */
+/* Estilos generales para la sección */
+#video-section {
+    display: flex;
+    flex-direction: column;
+    /* Acomoda elementos en columna */
+    justify-content: center;
+    /* Centra en el eje vertical */
+    align-items: center;
+    /* Centra en el eje horizontal */
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Color de fondo opcional */
+}
+
+/* Estilos para el video */
+#video-section video {
+    max-width: 100%;
+    /* Se adapta al ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra decorativa opcional */
+    border-radius: 8px;
+    /* Bordes redondeados opcionales */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+    #video-section {
+        height: 100vh;
+        /* Ocupa toda la altura de la pantalla */
+    }
+
+    #video-section h1 {
+        font-size: 2.5rem;
+        /* Ajusta el tamaño del encabezado */
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #video-section h1 {
+        font-size: 1.5rem;
+        /* Ajusta el tamaño del encabezado */
+    }
+
+    #video-section video {
+        width: 90%;
+        /* Reduce el ancho del video */
+    }
+}
