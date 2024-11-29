@@ -469,11 +469,9 @@ footer {
 /* Ajustes para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .grid-container {
-<<<<<<< HEAD
         grid-template-columns: 4, 1fr;
-=======
-        grid-template-columns:(4, 1fr);
->>>>>>> c98fe9f960ff52046aad203773bd979cb71611ec
+        grid-template-columns: (1fr, 1fr, 1fr, 1fr);
+
         /* 1 imagen por fila en pantallas pequeñas */
     }
 }
