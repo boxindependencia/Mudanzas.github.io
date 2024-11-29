@@ -445,6 +445,7 @@ footer {
     width: 100%;
     height: 100%;
     display: flex;
+    margin: 1px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -454,6 +455,7 @@ footer {
 .card-img-top {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     /* Mantiene la proporción y cubre el área */
 }
@@ -469,11 +471,25 @@ footer {
 /* Ajustes para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .grid-container {
-        grid-template-columns: 4, 1fr;
-        grid-template-columns: (1fr, 1fr, 1fr, 1fr);
-
-        /* 1 imagen por fila en pantallas pequeñas */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas para móviles */
+        overflow-x: auto;
+        /* Permite desplazarse horizontalmente */
+        padding-bottom: 2px;
+        /* Espacio al final del contenedor */
     }
+}
+
+/* Adicionalmente, si se requiere un carrusel desplazable */
+.carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 1px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    /* Cada tarjeta ocupa la mitad de la pantalla */
 }
 
 /* Para evitar que las imágenes se desborden o se deformen */
