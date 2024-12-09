@@ -330,6 +330,25 @@
 
                     </div>
                     <!-- tercer set de imágenes (de aspecto libre) -->
+                    <div class="carousel-item ">
+                        <div class="grid-container">
+                            <div class="card">
+                                <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.05 PM.jpeg" alt="Image 1"
+                                    class="card-img-top">
+                            </div>
+                            <div class="card">
+                                <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.45 PM.jpeg" alt="Image 2"
+                                    class="card-img-top">
+                            </div>
+                            <div class="card">
+                                <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.46 PM (1).jpeg" alt="Image 3"
+                                    class="card-img-top">
+                            </div>
+                            <div class="card">
+                                <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.46 PM.jpeg" alt="Image 4"
+                                    class="card-img-top">
+                            </div>
+                        </div>
 
 
                 </div>
@@ -433,32 +452,27 @@
                     Cotizar
                 </a>
             </section>
-
             <section class="form-section mb-4">
                 <h2>Realiza tu cotización o trabaja con nosotros</h2>
                 <p>Permita que nuestro personal experto en mudanzas nacionales, fletes terrestres y embalajes lo atienda
                     como usted lo merece.<strong> Si deseas unirte a nuestro equipo, completa el formulario a
                         continuación:</strong></p>
-                <!-- Formulario con integración de Formspree -->
-                <form action="https://formspree.io/f/myzygylr" method="POST">
+                <form id="whatsappForm">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre y Apellido*</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido"
-                            required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" required>
                     </div>
-
+            
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail*</label>
-                        <input type="email" class="form-control" id="email" name="email"
-                            placeholder="Correo electrónico" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
                     </div>
-
+            
                     <div class="mb-3">
                         <label for="phone" class="form-label">Teléfono o Móvil*</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono o Móvil"
-                            required>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono o Móvil" required>
                     </div>
-
+            
                     <div class="mb-3">
                         <label for="options" class="form-label">Seleccione opción*</label>
                         <select class="form-select" id="options" name="options" required>
@@ -468,16 +482,25 @@
                             <option value="trabajo">Trabaja con nosotros</option>
                         </select>
                     </div>
-
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="message" name="message"
-                            placeholder="Escriba su mensaje aquí"></textarea>
+                        <label for="origen" class="form-label">Direcion de origen*</label>
+                        <input type="text" class="form-control" id="origen" name="phone" placeholder="Numeración y comuna" required>
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="mb-3">
+                        <label for="destino" class="form-label">Direcion de Destino*</label>
+                        <input type="text" class="form-control" id="destino" name="phone" placeholder="Numeración y comuna" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:<strong> Para agilizar su cotizacion enviar fotos o video de lo que desea trasladar.</strong></label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Escriba su mensaje aquí"></textarea>
+                    </div>
+            
+                    <button type="button" class="btn btn-primary" onclick="enviarWhatsApp()">Enviar</button>
                 </form>
             </section>
+
+            
 
         </div>
     </main>

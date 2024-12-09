@@ -75,26 +75,22 @@
                 <p>Permita que nuestro personal experto en mudanzas nacionales, fletes terrestres y embalajes lo atienda
                     como usted lo merece.<strong> Si deseas unirte a nuestro equipo, completa el formulario a
                         continuación:</strong></p>
-                <!-- Formulario con integración de Formspree -->
-                <form action="https://formspree.io/f/myzygylr" method="POST">
+                <form id="whatsappForm">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre y Apellido*</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido"
-                            required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" required>
                     </div>
-
+            
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail*</label>
-                        <input type="email" class="form-control" id="email" name="email"
-                            placeholder="Correo electrónico" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
                     </div>
-
+            
                     <div class="mb-3">
                         <label for="phone" class="form-label">Teléfono o Móvil*</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono o Móvil"
-                            required>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono o Móvil" required>
                     </div>
-
+            
                     <div class="mb-3">
                         <label for="options" class="form-label">Seleccione opción*</label>
                         <select class="form-select" id="options" name="options" required>
@@ -104,17 +100,59 @@
                             <option value="trabajo">Trabaja con nosotros</option>
                         </select>
                     </div>
-
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="message" name="message"
-                            placeholder="Escriba su mensaje aquí"></textarea>
+                        <label for="origen" class="form-label">Direcion de origen*</label>
+                        <input type="text" class="form-control" id="origen" name="phone" placeholder="Numeración y comuna" required>
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="mb-3">
+                        <label for="destino" class="form-label">Direcion de Destino*</label>
+                        <input type="text" class="form-control" id="destino" name="phone" placeholder="Numeración y comuna" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:<strong> Para agilizar su cotizacion enviar fotos o video de lo que desea trasladar.</strong></label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Escriba su mensaje aquí"></textarea>
+                    </div>
+            
+                    <button type="button" class="btn btn-primary" onclick="enviarWhatsApp()">Enviar</button>
                 </form>
             </section>
-
+            
+            <script>
+                function enviarWhatsApp() {
+                    // Capturar los datos del formulario
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const options = document.getElementById('options').value.trim();
+                    const origen = document.getElementById('origen').value.trim();
+                    const destino = document.getElementById('destino').value.trim();
+                    const message = document.getElementById('message').value.trim();
+            
+                    // Validación de campos
+                    if (!name || !email || !phone || !options || !origen || !destino) {
+                        alert("Por favor, completa todos los campos obligatorios.");
+                        return;
+                    }
+            
+                    // Construcción del mensaje
+                    const texto = `Hola, soy ${name}.
+            Email: ${email}
+            Teléfono: ${phone}
+            Opción seleccionada: ${options}
+            origen: ${origen}
+            destino: ${destino}
+            Mensaje: ${message}`;
+            
+                    // URL de WhatsApp con número específico (reemplaza con tu número real)
+                    const numeroWhatsApp = "56954559088"; // Reemplaza con el número real
+                    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+            
+                    // Redirigir a WhatsApp
+                    window.open(url, '_blank');
+                }
+            </script>
+            
         </div>
     </main>
 
