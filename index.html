@@ -499,6 +499,40 @@
                     <button type="button" class="btn btn-primary" onclick="enviarWhatsApp()">Enviar</button>
                 </form>
             </section>
+            <script>
+                function enviarWhatsApp() {
+                    // Capturar los datos del formulario
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const options = document.getElementById('options').value.trim();
+                    const origen = document.getElementById('origen').value.trim();
+                    const destino = document.getElementById('destino').value.trim();
+                    const message = document.getElementById('message').value.trim();
+            
+                    // Validación de campos
+                    if (!name || !email || !phone || !options || !origen || !destino) {
+                        alert("Por favor, completa todos los campos obligatorios.");
+                        return;
+                    }
+            
+                    // Construcción del mensaje
+                    const texto = `Hola, soy ${name}.
+            Email: ${email}
+            Teléfono: ${phone}
+            Opción seleccionada: ${options}
+            origen: ${origen}
+            destino: ${destino}
+            Mensaje: ${message}`;
+            
+                    // URL de WhatsApp con número específico (reemplaza con tu número real)
+                    const numeroWhatsApp = "56954559088"; // Reemplaza con el número real
+                    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+            
+                    // Redirigir a WhatsApp
+                    window.open(url, '_blank');
+                }
+            </script>
 
             
 
