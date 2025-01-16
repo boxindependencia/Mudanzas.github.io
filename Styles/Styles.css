@@ -533,7 +533,7 @@ footer {
 /*estos es el carrusel de videos*/
 #video-carousel video {
     width: 100%;
-    height: 400px; /* Altura uniforme */
+    height: 450px; /* Altura uniforme */
     object-fit: cover;
     margin-top: 0px;
     margin-left: 20px;
