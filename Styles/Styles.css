@@ -264,9 +264,10 @@ nav ul li a {
 
 .card-title {
     color: rgb(12, 12, 12);
+    font-family: Arial;
     text-align: center;
-    border-radius: 10px;
-    background-color: #969494;
+    border-radius: 20px;
+    background-color: #97c1c6;
     font-size: x-large;
     padding: 5px;
     /* Color del título de la tarjeta */
@@ -385,6 +386,8 @@ footer {
     /* Color de fondo opcional */
 }
 
+
+
 /* Estilos para el video */
 #video-section video {
     max-width: 100%;
@@ -449,8 +452,17 @@ footer {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
-
+.card1 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 1px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 /* Ajuste de las imágenes dentro de las tarjetas para que tengan el mismo tamaño */
 .card-img-top {
     width: 100%;
@@ -490,6 +502,7 @@ footer {
 
 .carousel-item {
     min-width: 100%;
+    margin-bottom: 5px;
     /* Cada tarjeta ocupa la mitad de la pantalla */
 }
 
@@ -497,3 +510,67 @@ footer {
 .carousel-item img {
     transition: opacity 0.5s ease-in-out;
 }
+
+
+/* Estilo para el carrusel de videos */
+#video-carousel .carousel-item {
+    padding: 15px 0;
+}
+
+#video-carousel .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#video-carousel .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*estos es el carrusel de videos*/
+#video-carousel video {
+    width: 100%;
+    height: 400px; /* Altura uniforme */
+    object-fit: cover;
+    margin-top: 0px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#video-carousel video:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 992px) {
+    #video-carousel .col-md-3 {
+        flex: 0 0 50%; /* 2 videos por fila */
+        max-width: 50%;
+        padding: 5px; /* Espaciado entre los videos */
+    }
+
+    #video-carousel video {
+        width: 100%; /* Asegura que el video ocupe todo el ancho disponible */
+        height: auto; /* Mantiene la proporción del video */
+    }
+}
+
+@media (max-width: 576px) {
+    #video-carousel .col-md-3 {
+        flex: 0 0 50%; /* 2 videos por fila */
+        max-width: 50%; /* Garantiza que los videos ocupen el 50% del contenedor */
+        padding: 5px; /* Espaciado entre los videos */
+    }
+
+    #video-carousel video {
+        width: 100%; /* Asegura que el video ocupe todo el ancho disponible */
+        height: auto; /* Mantiene la proporción del video */
+    }
+}
+

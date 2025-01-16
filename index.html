@@ -126,6 +126,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
+                   
                 </ul>
             </div>
         </div>
@@ -281,27 +282,27 @@
 
     <!--Probando section video -->
 
-    <section>
+    <section id="imagenes">
         <h1>Nuestros servicios</h1>
-        <div class="container my-5">
+        <div class="container" style="margin: 0; padding: 0;">
             <div id="carouselGrid" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <!-- Primer set de imágenes (cuadradas) -->
                     <div class="carousel-item active">
                         <div class="grid-container">
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.05 PM.jpeg" alt="Image 1"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.45 PM.jpeg" alt="Image 2"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.46 PM (1).jpeg" alt="Image 3"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.46 PM.jpeg" alt="Image 4"
                                     class="card-img-top">
                             </div>
@@ -310,19 +311,19 @@
                     <!-- Segundo set de imágenes (de aspecto libre) -->
                     <div class="carousel-item">
                         <div class="grid-container">
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.04 PM.jpeg" alt="Image 5"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.05 PM (1).jpeg" alt="Image 6"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.05 PM (2).jpeg" alt="Image 7"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.05 PM (3).jpeg" alt="Image 8"
                                     class="card-img-top">
                             </div>
@@ -332,19 +333,19 @@
                     <!-- tercer set de imágenes (de aspecto libre) -->
                     <div class="carousel-item ">
                         <div class="grid-container">
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-27 at 5.38.05 PM.jpeg" alt="Image 1"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.45 PM.jpeg" alt="Image 2"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.46 PM (1).jpeg" alt="Image 3"
                                     class="card-img-top">
                             </div>
-                            <div class="card">
+                            <div class="card1">
                                 <img src="imgservicios/WhatsApp Image 2024-11-28 at 11.42.46 PM.jpeg" alt="Image 4"
                                     class="card-img-top">
                             </div>
@@ -363,13 +364,45 @@
             </div>
         </div>
     </section>
-    <section id="video-section">
-
-        <video controls>
-            <source src="video/videotransportesjd.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video. Por favor, actualiza tu navegador.
-        </video>
+    <section id="video-carousel" class="carousel slide" data-bs-ride="false"> <!-- Cambiado de 'carousel' a 'false' -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-3">
+                        <video controls>
+                            <source src="video/videotransportesjd.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="col-md-3">
+                        <video controls>
+                            <source src="video/video1.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="col-md-3">
+                        <video controls>
+                            <source src="video/video2.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="col-md-3">
+                        <video controls>
+                            <source src="video/video3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <button class="carousel-control-next" type="button" data-bs-target="#video-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </section>
+    
+    
 
 
 
@@ -483,11 +516,11 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="origen" class="form-label">Direcion de origen*</label>
+                        <label for="origen" class="form-label">Dirección de origen*</label>
                         <input type="text" class="form-control" id="origen" name="phone" placeholder="Numeración y comuna" required>
                     </div>
                     <div class="mb-3">
-                        <label for="destino" class="form-label">Direcion de Destino*</label>
+                        <label for="destino" class="form-label">Dirección  de Destino*</label>
                         <input type="text" class="form-control" id="destino" name="phone" placeholder="Numeración y comuna" required>
                     </div>
             
@@ -496,7 +529,7 @@
                         <textarea class="form-control" id="message" name="message" placeholder="Escriba su mensaje aquí"></textarea>
                     </div>
             
-                    <button type="button" class="btn btn-primary" onclick="enviarWhatsApp()">Enviar</button>
+                    <button type="button" class="btn btn-primary" onclick="enviarWhatsApp()">Solicitar Cotizacón</button>
                 </form>
             </section>
             <script>
